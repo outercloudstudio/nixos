@@ -94,17 +94,16 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-          vscode
-          kitty
-          lf
-          waybar
-          mako
-          libnotify
-          rofi-wayland
-          cargo
-          rustc
-          gcc
-          cowsay
+    vscode
+    kitty
+    lf
+    waybar
+    mako
+    libnotify
+    rofi-wayland
+    cargo
+    rustc
+    gcc
   ];
 
   programs.hyprland.enable = true;
