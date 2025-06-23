@@ -104,7 +104,6 @@
           cargo
           rustc
           gcc
-          cowsay
   ];
 
   programs.hyprland.enable = true;
