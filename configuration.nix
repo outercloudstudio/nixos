@@ -105,6 +105,7 @@
           rustc
           gcc
           cowsay
+          lolcat
   ];
 
   programs.hyprland.enable = true;
