@@ -107,6 +107,7 @@
           cargo
           rustc
           gcc
+          hyprpaper
   ];
 
   programs.hyprland.enable = true;

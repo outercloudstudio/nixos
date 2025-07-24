@@ -4,6 +4,11 @@
   home.username = "liamh";
   home.homeDirectory = "/home/liamh";
 
+  imports = [
+    ./hypr
+    ./backgrounds
+  ]
+
   home.packages = with pkgs; [
 
   ];
