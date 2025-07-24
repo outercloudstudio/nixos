@@ -7,7 +7,7 @@
   imports = [
     ./hypr
     ./backgrounds
-  ]
+  ];
 
   home.packages = with pkgs; [
 
