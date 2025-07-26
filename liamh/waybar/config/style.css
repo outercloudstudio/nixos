@@ -35,5 +35,12 @@ window#waybar {
 #workspaces button {
 	all: unset;
 	padding: 0px 5px;
-	color: #ff0000;
+	color: #3c3836;
+	background: #3c3836;
+	border-radius: 100%;
+}
+
+#workspaces button.active {
+	color: #b8bb26;
+	background: #b8bb26;
 }
