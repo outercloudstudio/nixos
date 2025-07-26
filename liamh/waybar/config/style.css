@@ -34,6 +34,6 @@ window#waybar {
 
 #workspaces button {
 	all: unset;
+	padding: 0px 5px;
 	color: #ff0000;
-	background: #ff0000;
 }
