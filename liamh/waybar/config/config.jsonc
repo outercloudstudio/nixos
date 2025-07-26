@@ -13,5 +13,17 @@
 
 	"clock": {
 		"format-alt": "{:%a, %d. %b  %H:%M}"
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": "",
+			"empty": ""
+		},
+		"persistent-workspaces": {
+			"*": [1, 2, 3, 4, 5]
+		}
 	}
 }

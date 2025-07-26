@@ -36,7 +36,4 @@ window#waybar {
 	all: unset;
 	color: #ff0000;
 	background: #ff0000;
-	width: 5px;
-	height: 5px;
-	border-radius: 100%;
 }

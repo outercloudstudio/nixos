@@ -110,6 +110,7 @@
           rustc
           gcc
           hyprpaper
+          font-awesome
   ];
 
   programs.hyprland.enable = true;
