@@ -13,6 +13,6 @@
 			name = "Fira Code";
 		};
 
-		themeFile = "gruvbox_dark";
+		themeFile = "gruvbox-dark";
   };
 }
