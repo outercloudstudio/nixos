@@ -4,7 +4,7 @@ window#waybar {
 
 .modules-left {
 	margin: 10px 0px 10px 10px;
-	padding: 8px 14px;
+	padding: 8px 16px;
 	border-radius: 8px;
 	background: #282828;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -13,13 +13,21 @@ window#waybar {
 }
 
 .modules-center {
-	all: unset;
+	margin: 10px 0px 10px 10px;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background: #282828;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+	border: 1px solid #e6ddb9;
+	color: #e6ddb9;
 }
 
 .modules-right {
-	padding: 7px;
-	margin: 10 10 5 0;
-	border-radius: 10px;
-	background: alpha(rgba(69, 69, 69, 0.5), 0.6);
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+	margin: 10px 0px 10px 10px;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background: #282828;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+	border: 1px solid #e6ddb9;
+	color: #e6ddb9;
 }
