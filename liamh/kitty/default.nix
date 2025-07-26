@@ -5,4 +5,14 @@
 		source = ./config;
 		recursive = true;
 	};
+
+	programs.kitty = {
+		enable = true;
+
+		font = {
+			name = "Fira Code";
+		};
+
+		theme = "Gruvbox Dark";
+  };
 }
