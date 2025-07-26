@@ -3,7 +3,7 @@ window#waybar {
 }
 
 .modules-left {
-	margin: 10px 0px 10px 10px;
+	margin: 10px 0px 10px 0px;
 	padding: 8px 12px;
 	border-radius: 8px;
 	background: #282828;
@@ -13,7 +13,7 @@ window#waybar {
 }
 
 .modules-center {
-	margin: 10px 0px 10px 10px;
+	margin: 10px 0px 10px 0px;
 	padding: 8px 12px;
 	border-radius: 8px;
 	background: #282828;
@@ -23,7 +23,7 @@ window#waybar {
 }
 
 .modules-right {
-	margin: 10px 0px 10px 10px;
+	margin: 10px 0px 10px 0px;
 	padding: 8px 12px;
 	border-radius: 8px;
 	background: #282828;
@@ -35,7 +35,7 @@ window#waybar {
 #workspaces button {
 	all: unset;
 	margin: 0px 5px;
-	padding: 0px 6px;
+	padding: 0px 2px;
 	color: #3c3836;
 	background: #3c3836;
 	border-radius: 100%;
