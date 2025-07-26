@@ -8,6 +8,7 @@
     ./hypr
     ./backgrounds
     ./waybar
+    ./kitty
   ];
 
   home.packages = with pkgs; [
