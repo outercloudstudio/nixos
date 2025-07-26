@@ -104,7 +104,7 @@
     waybar
     mako
     libnotify
-    rofi-wayland
+    wofi
     cargo
     rustc
     gcc
