@@ -38,8 +38,8 @@ window#waybar {
 	color: #3c3836;
 	background: #3c3836;
 	border-radius: 100%;
-	min-width: 14px;
-	min-height: 14px;
+	min-width: 20px;
+	min-height: 20px;
 }
 
 #workspaces button.active {
