@@ -100,7 +100,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vscode
-    kitty
     lf
     waybar
     mako
@@ -110,6 +109,7 @@
     rustc
     gcc
     hyprpaper
+  
   ];
 
   fonts.packages = with pkgs; [
