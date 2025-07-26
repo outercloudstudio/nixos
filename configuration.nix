@@ -99,18 +99,25 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-          vscode
-          kitty
-          lf
-          waybar
-          mako
-          libnotify
-          rofi-wayland
-          cargo
-          rustc
-          gcc
-          hyprpaper
-          font-awesome
+    vscode
+    kitty
+    lf
+    waybar
+    mako
+    libnotify
+    rofi-wayland
+    cargo
+    rustc
+    gcc
+    hyprpaper
+  ];
+
+  fonts.packages = with pkgs; [
+    inter
+    fira-code
+    fira-code-symbols
+    font-awesome
+    joypixels
   ];
 
   programs.hyprland.enable = true;
