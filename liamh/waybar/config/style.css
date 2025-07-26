@@ -31,3 +31,8 @@ window#waybar {
 	border: 1px solid #e6ddb9;
 	color: #e6ddb9;
 }
+
+#workspaces button {
+	all: unset;
+	color: #ff0000;
+}
