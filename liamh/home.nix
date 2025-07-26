@@ -7,6 +7,7 @@
   imports = [
     ./hypr
     ./backgrounds
+    ./waybar
   ];
 
   home.packages = with pkgs; [
