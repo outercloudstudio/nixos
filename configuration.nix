@@ -117,7 +117,6 @@
     fira-code
     fira-code-symbols
     font-awesome
-    joypixels
   ];
 
   programs.hyprland.enable = true;
