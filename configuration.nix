@@ -119,6 +119,16 @@
     font-awesome
   ];
 
+  fonts.fontconfig = {
+    enable = true;
+
+    defaultFonts = {
+      sansSerif = ["Inter"];
+      serif = ["Inter"];
+      monospace = ["Fira Code"];
+    };
+  };
+
   programs.hyprland.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
