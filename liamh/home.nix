@@ -9,6 +9,7 @@
     ./backgrounds
     ./waybar
     ./kitty
+    ./hyprcursor
   ];
 
   home.packages = with pkgs; [
