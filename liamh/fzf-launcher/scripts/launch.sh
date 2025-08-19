@@ -1,4 +1,4 @@
-mapfile -t GUI_APPS < ~/.config/fzf-gui-apps
+mapfile -t GUI_APPS < ~/.config/gui-programs.txt
 
 is_gui_app() {
     local cmd=$1
