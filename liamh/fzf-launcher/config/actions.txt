@@ -3,3 +3,4 @@ cleanup
 record
 play
 duf
+reboot
