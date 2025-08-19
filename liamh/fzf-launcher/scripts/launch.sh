@@ -14,8 +14,8 @@ selected=$(compgen -c | fzf)
 
 if [ -n "$selected" ]; then
     if is_gui_app "$selected"; then
-        "$selected" & disown; sleep 1
+        (nohup "$selected") & disown; sleep 1
     else
-        kitty "$selected" & disown; sleep 1
+        (nohup kitty "$selected") & disown; sleep 1
     fi
 fi
