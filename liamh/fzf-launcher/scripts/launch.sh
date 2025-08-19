@@ -16,6 +16,6 @@ if [ -n "$selected" ]; then
     if is_gui_app "$selected"; then
         "$selected" & disown
     else
-        exec "$selected"
+        kitty "$selected"
     fi
 fi
