@@ -32,6 +32,7 @@
       export PATH="$HOME/bin:$PATH"
 
       alias rebuild="sudo bash ~/bin/rebuild.sh"
+      alias cleanup="sudo nix-collect-garbage"
     '';
   };
 
