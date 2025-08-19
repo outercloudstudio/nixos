@@ -10,7 +10,7 @@ is_gui_app() {
     return 1
 }
 
-selected=$(compgen -c | fzf)
+selected=$(cat ~/.config/fzf-launcher/gui-programs.txt ~/.config/fzf-launcher/tui-programs.txt | fzf)
 
 if [ -n "$selected" ]; then
     if is_gui_app "$selected"; then
