@@ -28,7 +28,7 @@ if [ -n "$selected" ]; then
         nohup "$selected" & sleep 0.0001
     else
         if is_action "$selected"; then
-            nohup kitty -e bash -i -c "$selected && read -p 'Press enter to exit'" & sleep 0.0001
+            nohup kitty -e bash -i -c "$selected || read -p 'Press enter to exit'" & sleep 0.0001
         else
             nohup kitty -e bash -i -c "$selected" & sleep 0.0001
         fi
