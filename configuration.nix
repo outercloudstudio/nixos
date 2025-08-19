@@ -113,6 +113,7 @@
     hyprpaper
     fzf
     ollama
+    impala
   ];
 
   fonts.packages = with pkgs; [
