@@ -11,6 +11,7 @@
     ./kitty
     ./hyprcursor
     ./fzf-launcher
+    ./scripts
   ];
 
   home.packages = with pkgs; [
