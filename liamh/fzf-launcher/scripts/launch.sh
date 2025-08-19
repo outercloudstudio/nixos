@@ -14,8 +14,8 @@ selected=$(compgen -c | fzf)
 
 if [ -n "$selected" ]; then
     if is_gui_app "$selected"; then
-        nohup "$selected" & disown
+        nohup "$selected" & echo GUI!
     else
-        nohup kitty "$selected" & disown
+        nohup kitty "$selected" & echo NOT GUI!
     fi
 fi
