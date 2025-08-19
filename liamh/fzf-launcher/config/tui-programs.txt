@@ -1,3 +1,7 @@
 lf
 impala
 gemma
+duf
+btop
+bcal
+cava

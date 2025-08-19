@@ -1,2 +1,4 @@
 rebuild
 cleanup
+record
+play

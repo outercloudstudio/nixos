@@ -114,6 +114,11 @@
     fzf
     ollama
     impala
+    duf
+    btop
+    bcal
+    asak
+    cava
   ];
 
   fonts.packages = with pkgs; [
