@@ -10,6 +10,7 @@
     ./waybar
     ./kitty
     ./hyprcursor
+    ./fzf-launcher
   ];
 
   home.packages = with pkgs; [

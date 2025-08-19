@@ -6,7 +6,7 @@
 		recursive = true;
 	};
 
-	home.file."fzf-launcher" = {
+	home.file."bin/fzf-launcher" = {
 		source = ./scripts;
 		recursive = true;
 	};
