@@ -10,7 +10,7 @@ is_gui_app() {
     return 1
 }
 
-selected=$(cat ~/.config/fzf-launcher/gui-programs.txt ~/.config/fzf-launcher/tui-programs.txt | fzf)
+selected=$((cat ~/.config/fzf-launcher/gui-programs.txt; echo ""; cat ~/.config/fzf-launcher/tui-programs.txt) | fzf)
 
 if [ -n "$selected" ]; then
     if is_gui_app "$selected"; then
