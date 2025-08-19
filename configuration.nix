@@ -119,6 +119,7 @@
     asak
     cava
     pavucontrol
+    hyprpolkitagent
   ];
 
   fonts.packages = with pkgs; [
@@ -146,7 +147,6 @@
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   security.polkit.enable = true;
-  services.hyprpolkitagent.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
