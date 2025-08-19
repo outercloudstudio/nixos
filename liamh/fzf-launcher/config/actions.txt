@@ -2,3 +2,4 @@ rebuild
 cleanup
 record
 play
+duf
