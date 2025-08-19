@@ -109,7 +109,7 @@
     rustc
     gcc
     hyprpaper
-  
+    fzf
   ];
 
   fonts.packages = with pkgs; [
