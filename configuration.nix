@@ -110,6 +110,7 @@
     gcc
     hyprpaper
     fzf
+    ollama
   ];
 
   fonts.packages = with pkgs; [
