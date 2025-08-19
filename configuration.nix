@@ -119,6 +119,7 @@
     bcal
     asak
     cava
+    pavucontrol
   ];
 
   fonts.packages = with pkgs; [
