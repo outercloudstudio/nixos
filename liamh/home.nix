@@ -14,9 +14,7 @@
     ./scripts
   ];
 
-  home.packages = with pkgs; [
-    helix
-  ];
+  home.packages = with pkgs; [];
 
   programs.git = {
     enable = true;
@@ -38,6 +36,18 @@
       alias play="asak play"
     '';
   };
+
+  programs.helix = {
+    enable = true;
+    theme = "everforest_dark_transparent";
+
+    themes = {
+      autumn_night_transparent = {
+        "inherits" = "everforest_dark";
+        "ui.background" = { };
+      };
+    };
+  }
 
   home.stateVersion = "25.05";
 }
