@@ -2,3 +2,4 @@ firefox
 code
 kitty
 pavucontrol
+obsidian

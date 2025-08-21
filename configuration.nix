@@ -120,6 +120,7 @@
     cava
     pavucontrol
     hyprpolkitagent
+    obsidian
   ];
 
   fonts.packages = with pkgs; [
@@ -143,8 +144,8 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  # xdg.portal.enable = true;
+  # xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   security.polkit.enable = true;
 
