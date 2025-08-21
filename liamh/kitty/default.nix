@@ -13,5 +13,10 @@
 		settings = {
 			confirm_os_window_close = 0;
 		};
-  };
+ 	};
+
+	home.file.".config/kitty" = {
+		source = ./config;
+		recursive = true;
+	};
 }
