@@ -39,7 +39,10 @@
 
   programs.helix = {
     enable = true;
-    theme = "everforest_dark_transparent";
+    
+    settings = {
+      theme = "everforest_dark_transparent";
+    };
 
     themes = {
       everforest_dark_transparent = {
