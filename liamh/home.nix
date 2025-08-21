@@ -42,7 +42,7 @@
     theme = "everforest_dark_transparent";
 
     themes = {
-      autumn_night_transparent = {
+      everforest_dark_transparent = {
         "inherits" = "everforest_dark";
         "ui.background" = { };
       };
