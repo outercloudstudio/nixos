@@ -48,6 +48,8 @@
       everforest_dark_transparent = {
         "inherits" = "everforest_dark";
         "ui.background" = { };
+        "ui.statusline" = { };
+        "ui.statusline.inactive" = { };
       };
     };
   };
