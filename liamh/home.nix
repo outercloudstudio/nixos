@@ -47,7 +47,7 @@
         "ui.background" = { };
       };
     };
-  }
+  };
 
   home.stateVersion = "25.05";
 }
