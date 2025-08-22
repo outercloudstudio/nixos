@@ -8,7 +8,7 @@
 			name = "Fira Code";
 		};
 
-		themeFile = "everforest-dark-hard";
+		themeFile = "everforest_dark_hard";
 
 		settings = {
 			confirm_os_window_close = 0;
