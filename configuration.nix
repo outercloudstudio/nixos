@@ -106,9 +106,6 @@
     waybar
     mako
     libnotify
-    cargo
-    rustc
-    gcc
     hyprpaper
     fzf
     ollama
