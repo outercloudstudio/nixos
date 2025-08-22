@@ -8,7 +8,7 @@
 			name = "Fira Code";
 		};
 
-		themeFile = "gruvbox-dark";
+		themeFile = "everforest-dark-hard";
 
 		settings = {
 			confirm_os_window_close = 0;
