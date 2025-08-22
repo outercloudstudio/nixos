@@ -49,6 +49,7 @@
         "inherits" = "everforest_dark";
         "ui.background" = { };
         "ui.statusline" = { };
+        "ui.popup" = { };
       };
     };
   };
