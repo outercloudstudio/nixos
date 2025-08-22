@@ -50,6 +50,8 @@
         "ui.background" = { };
         "ui.statusline" = { };
         "ui.popup" = { };
+        "ui.menu" = { };
+        "ui.prompt" = { };
       };
     };
   };
