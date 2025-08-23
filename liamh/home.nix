@@ -6,7 +6,6 @@
 
   imports = [
     ./hypr
-    ./waybar
     ./kitty
     ./hyprcursor
     ./fzf-launcher

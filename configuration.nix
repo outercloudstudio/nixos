@@ -103,7 +103,6 @@
   environment.systemPackages = with pkgs; [
     vscode
     lf
-    waybar
     mako
     libnotify
     hyprpaper
