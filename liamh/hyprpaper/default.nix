@@ -10,4 +10,9 @@
             wallpaper = [ "eDP-2,~/backgrounds/outer-wilds.jpg" ];
         };
     };
+
+    home.file."backgrounds" = {
+		source = ./backgrounds;
+		recursive = true;
+	};
 }

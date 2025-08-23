@@ -6,7 +6,6 @@
 
   imports = [
     ./hypr
-    ./backgrounds
     ./waybar
     ./kitty
     ./hyprcursor
