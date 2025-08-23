@@ -12,15 +12,10 @@
     ./fzf-launcher
     ./scripts
     ./hyprpaper
+    ./git
   ];
 
   home.packages = with pkgs; [];
-
-  programs.git = {
-    enable = true;
-    userName = "outercloudstudio";
-    userEmail = "outercloudstudio@gmail.com";
-  };
 
   programs.bash = {
     enable = true;
