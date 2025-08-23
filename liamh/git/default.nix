@@ -10,4 +10,6 @@
         extraConfig.credential."http://github.com".username = "outercloudstudio";
         extraConfig.crednetial.credentialStore = "cache";
     };
+    
+    home.packages = with pkgs; [ git-credential-manager ];
 }
