@@ -8,7 +8,7 @@
 
         extraConfig.credential.helper = "manager";
         extraConfig.credential."http://github.com".username = "outercloudstudio";
-        extraConfig.crednetial.credentialStore = "secretservice";
+        extraConfig.credential.credentialStore = "secretservice";
     };
     
     home.packages = with pkgs; [ git-credential-manager ];
