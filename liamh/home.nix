@@ -12,6 +12,7 @@
     ./hyprcursor
     ./fzf-launcher
     ./scripts
+    ./hyprpaper
   ];
 
   home.packages = with pkgs; [];
