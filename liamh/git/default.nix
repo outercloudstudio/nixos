@@ -7,7 +7,7 @@
         userEmail = "outercloudstudio@gmail.com";
 
         extraConfig.credential.helper = "manager";
-        extraConfig.credential."http://git.htlec.org".username = "outercloudstudio";
+        extraConfig.credential."http://github.com".username = "outercloudstudio";
         extraConfig.crednetial.credentialStore = "cache";
     };
 }
