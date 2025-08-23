@@ -109,10 +109,8 @@
     hyprpaper
     fzf
     ollama
-    impala
     duf
     btop
-    bcal
     asak
     cava
     pavucontrol
