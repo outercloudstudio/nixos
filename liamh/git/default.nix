@@ -6,12 +6,12 @@
         userName = "outercloudstudio";
         userEmail = "outercloudstudio@gmail.com";
 
-        extraConfig = {
-            credential.helper = "${
-                pkgs.git.override { withLibsecret = true; }
-                }/bin/git-credential-libsecret";
-        };
+        extraConfig.credential.helper = "manager";
+        extraConfig.credential."https://github.com".username = "outercloud";
+        extraConfig.credential.credentialStore = "cache";
     };
+
+    programs.seahorse.enable = true;
     
-    home.packages = with pkgs; [ git-credential-manager ];
+    home.packages = with pkgs; [ git, git-credential-manager ];
 }
