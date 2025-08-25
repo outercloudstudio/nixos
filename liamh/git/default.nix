@@ -13,5 +13,5 @@
 
     programs.seahorse.enable = true;
     
-    home.packages = with pkgs; [ git, git-credential-manager ];
+    home.packages = with pkgs; [ git git-credential-manager ];
 }
