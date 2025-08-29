@@ -8,7 +8,7 @@
 
         extraConfig.credential = {
             helper = "manager";
-            extraConfig.credential."https://github.com".username = "outercloudstudio"
+            extraConfig.credential."https://github.com".username = "outercloudstudio";
             credentialStore = "store";
         };
     };
