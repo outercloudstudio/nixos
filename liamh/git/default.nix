@@ -8,8 +8,8 @@
 
         extraConfig.credential = {
             helper = "manager";
-            credentialStore = "store";
-            
+            credentialStore = "plaintext";
+
             "https://github.com".username = "outercloudstudio";
         };
     };
