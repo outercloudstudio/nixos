@@ -13,5 +13,5 @@
 
     home.packages = with pkgs; [
         pass
-    ]
+    ];
 }
