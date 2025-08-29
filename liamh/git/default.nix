@@ -6,10 +6,8 @@
         userName = "outercloudstudio";
         userEmail = "outercloudstudio@gmail.com";
 
-        extraConfig.credential.helper = "manager";
-        extraConfig.credential."https://github.com".username = "outercloud";
-        extraConfig.credential.credentialStore = "cache";
+        extraConfig.credential.helper = "libsecret";
     };
-    
-    home.packages = with pkgs; [ git git-credential-manager ];
+
+    services.pass-secret-service.enable = true;
 }
