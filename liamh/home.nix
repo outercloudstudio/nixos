@@ -14,6 +14,7 @@
     ./git
     ./bash
     ./helix
+    ./discord
   ];
 
   home.packages = with pkgs; [];
