@@ -15,6 +15,7 @@
     ./bash
     ./helix
     ./discord
+    ./quickshell
   ];
 
   home.packages = with pkgs; [];
