@@ -11,17 +11,32 @@
 	};
 
 	outputs = { self, nixpkgs, home-manager, ... }@inputs : {
-		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-			system = "x86_64-linux";
-			modules = [
-				./configuration.nix
-			
-				home-manager.nixosModules.home-manager {
-					home-manager.useGlobalPkgs = true;
-					home-manager.useUserPackages = true;
-					home-manager.users.liamh = import ./liamh/home.nix;
-				}
-			];
-		};
+		nixosConfigurations = {
+			laptop = nixpkgs.lib.nixosSystem {
+				system = "x86_64-linux";
+				modules = [
+					./configurations/laptop/configuration.nix
+				
+					home-manager.nixosModules.home-manager {
+						home-manager.useGlobalPkgs = true;
+						home-manager.useUserPackages = true;
+						home-manager.users.liamh = import ./liamh/home.nix;
+					}
+				];
+			};
+
+			tablet = nixpkgs.lib.nixosSystem {
+				system = "x86_64-linux";
+				modules = [
+					./configurations/tablet/configuration.nix
+				
+					home-manager.nixosModules.home-manager {
+						home-manager.useGlobalPkgs = true;
+						home-manager.useUserPackages = true;
+						home-manager.users.liamh = import ./liamh/home.nix;
+					}
+				];
+			};
+		}
 	};
 }
