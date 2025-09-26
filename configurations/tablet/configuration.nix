@@ -115,6 +115,7 @@
     pavucontrol
     hyprpolkitagent
     obsidian
+    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
