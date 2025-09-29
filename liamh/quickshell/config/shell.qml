@@ -30,6 +30,8 @@ Scope {
             implicitHeight: 64
 
             color: "transparent"
+
+            aboveWindows: false
             
             Rectangle {
                 anchors {
@@ -66,6 +68,10 @@ Scope {
                         text: root.time
                         font.pixelSize: 10
                         color: "white"
+
+                        font {
+                            weight: 500
+                        }
                     }
                 }
             }
@@ -112,7 +118,7 @@ Scope {
  
     Process {
         id: clockProcess
-        command: ["date", "+%H:%M %p"]
+        command: ["date", "+%l:%M"]
         running: true
         
         stdout: StdioCollector {
