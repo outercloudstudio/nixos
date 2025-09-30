@@ -16,6 +16,7 @@
     ./helix
     ./discord
     ./quickshell
+    # ./krita
   ];
 
   home.packages = with pkgs; [];
