@@ -54,11 +54,34 @@ Scope {
                         left: parent.left
                         right: parent.right
                         top: parent.top
+                        bottom: parent.bottom
 
-                        margins: 6
+                        leftMargin: 4
+                        rightMargin: 4
+                        topMargin: 4
+                        bottomMargin: 48
                     }
 
-                    height: 24
+                    Rectangle {
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+
+                        Item {
+                            anchors.fill: parent
+
+                            Repeater {
+                                model: CavaService.values.length
+
+                                Rectangle {
+                                    x: index * 8
+                                    width: 5
+                                    height: CavaService.values[index] * parent.height
+                                    y: parent.height - height
+                                    color: "white"
+                                }
+                            }
+                        }
+                    }
 
                     Item {
                         Layout.fillWidth: true
@@ -66,7 +89,7 @@ Scope {
 
                     Text {
                         text: root.time
-                        font.pixelSize: 10
+                        font.pixelSize: 12
                         color: "white"
 
                         font {
