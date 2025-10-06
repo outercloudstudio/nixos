@@ -6,11 +6,11 @@
 
   imports = [
     ./hypr
-    ./kitty
     ./hyprcursor
+    ./hyprpaper
+    ./kitty
     ./fzf-launcher
     ./scripts
-    ./hyprpaper
     ./git
     ./bash
     ./helix

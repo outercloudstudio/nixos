@@ -6,9 +6,16 @@
 		nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
 		home-manager = {
-      			url = "github:nix-community/home-manager/release-25.05";
-      			inputs.nixpkgs.follows = "nixpkgs";
-    		};
+			url = "github:nix-community/home-manager/release-25.05";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
+		hyprland.url = "github:hyprwm/Hyprland";
+
+		hyprland-plugins = {
+			url = "github:hyprwm/hyprland-plugins";
+			inputs.hyprland.follows = "hyprland";
+		};
 	};
 
 	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs : {
