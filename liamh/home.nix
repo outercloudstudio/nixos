@@ -17,6 +17,7 @@
     ./discord
     ./quickshell
     # ./krita
+    ./nix-direnv
   ];
 
   home.packages = with pkgs; [];
