@@ -1,10 +1,7 @@
 { config, pkgs, ... }:
 
 {
-    home.file.".config/hypr" = {
-		source = ./config;
-		recursive = true;
-	};
+	home.file.".config/hypr/user.conf".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/liamh/hypr/config/user.conf";
 
 	wayland.windowManager.hyprland = {
         enable = true;

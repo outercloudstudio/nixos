@@ -18,8 +18,8 @@ Scope {
             screen: modelData
 
             property HyprlandMonitor monitor: Hyprland.monitorFor(modelData)
-            property list<HyprlandWorkspace> workspacesForMonitor: Hyprland.workspaces.values.filter(workspace => workspace.monitor && workspace.monitor.name == monitor.name)
-            property bool fullscreen: workspacesForMonitor.some(workspace => workspace.toplevels.values.length == 1 && workspace.active)
+            property list<HyprlandWorkspace> workspacesForMonitor: Hyprland.workspaces.values.filter(workspace => workspace.monitor && workspace.monitor.name === monitor.name)
+            property bool fullscreen: workspacesForMonitor.some(workspace => workspace.toplevels.values.length === 1 && workspace.active)
             
             anchors {
                 top: true
@@ -62,26 +62,26 @@ Scope {
                         bottomMargin: 48
                     }
 
-                    Rectangle {
-                        anchors.top: parent.top
-                        anchors.bottom: parent.bottom
+                    // Rectangle {
+                    //     anchors.top: parent.top
+                    //     anchors.bottom: parent.bottom
 
-                        Item {
-                            anchors.fill: parent
+                    //     Item {
+                    //         anchors.fill: parent
 
-                            Repeater {
-                                model: CavaService.values.length
+                    //         Repeater {
+                    //             model: CavaService.values.length
 
-                                Rectangle {
-                                    x: index * 8
-                                    width: 5
-                                    height: CavaService.values[index] * parent.height
-                                    y: parent.height - height
-                                    color: "white"
-                                }
-                            }
-                        }
-                    }
+                    //             Rectangle {
+                    //                 x: index * 8
+                    //                 width: 5
+                    //                 height: CavaService.values[index] * parent.height
+                    //                 y: parent.height - height
+                    //                 color: "white"
+                    //             }
+                    //         }
+                    //     }
+                    // }
 
                     Item {
                         Layout.fillWidth: true
@@ -89,11 +89,11 @@ Scope {
 
                     Text {
                         text: root.time
-                        font.pixelSize: 12
                         color: "white"
 
                         font {
                             weight: 500
+                            pixelSize: 12
                         }
                     }
                 }
@@ -114,8 +114,8 @@ Scope {
                         topMargin: 24
                     }
 
-                    topLeftRadius: fullscreen ? 0 : 8
-                    topRightRadius: fullscreen ? 0 : 8
+                    topLeftRadius: fullscreen ? 0 : 14
+                    topRightRadius: fullscreen ? 0 : 14
 
                     Behavior on topLeftRadius {
                         NumberAnimation {
@@ -155,4 +155,6 @@ Scope {
         repeat: true
         onTriggered: clockProcess.running = true
     }
+
+    Launcher {}
 }
