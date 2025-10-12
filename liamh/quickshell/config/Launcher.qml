@@ -25,6 +25,10 @@ Scope {
             command: "discord"
         },
         {
+            label: "Claude",
+            command: ["chromium","--app=https://claude.ai","--force-dark-mode"],
+        },
+        {
             label: "Kitty",
             command: "kitty"
         },
@@ -96,7 +100,7 @@ Scope {
                     
                     if(filteredActions[0]) {
                         let process = Qt.createQmlObject('import Quickshell.Io; Process { }', parent);
-                        process.command = [filteredActions[0].command]
+                        process.command = typeof filteredActions[0].command === "string" ? [ filteredActions[0].command ] : filteredActions[0].command
                         process.running = true
 
                         display = false
@@ -162,7 +166,7 @@ Scope {
 
                         onClicked: {
                             let process = Qt.createQmlObject('import Quickshell.Io; Process { }', parent);
-                            process.command = [modelData.command]
+                            process.command = typeof modelData.command === "string" ? [ modelData.command ] : modelData.command
                             process.running = true
 
                             display = false

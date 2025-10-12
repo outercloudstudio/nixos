@@ -20,7 +20,9 @@
     ./nix-direnv
   ];
 
-  home.packages = with pkgs; [];
+  home.packages = with pkgs; [
+    chromium
+  ];
 
   home.stateVersion = "25.05";
 }
