@@ -21,6 +21,10 @@ Scope {
             command: "firefox"
         },
         {
+            label: "Obsidian",
+            command: "obsidian"
+        },
+        {
             label: "Discord",
             command: "discord"
         },
