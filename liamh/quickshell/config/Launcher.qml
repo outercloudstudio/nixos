@@ -43,6 +43,10 @@ Scope {
         {
             label: "Audio",
             command: "pavucontrol"
+        },
+        {
+            label: "Rnote",
+            command: "rnote"
         }
     ]
 

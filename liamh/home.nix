@@ -22,6 +22,7 @@
 
   home.packages = with pkgs; [
     chromium
+    rnote
   ];
 
   home.stateVersion = "25.05";
