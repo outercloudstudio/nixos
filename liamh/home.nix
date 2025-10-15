@@ -24,6 +24,7 @@
     chromium
     rnote
     brightnessctl
+    fastfetch
   ];
 
   home.stateVersion = "25.05";
