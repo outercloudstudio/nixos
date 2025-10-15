@@ -23,6 +23,7 @@
   home.packages = with pkgs; [
     chromium
     rnote
+    brightnessctl
   ];
 
   home.stateVersion = "25.05";
