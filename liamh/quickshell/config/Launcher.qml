@@ -18,11 +18,11 @@ Scope {
         },
         {
             label: "Firefox",
-            command: "firefox"
+            command: ["sh", "-c", "nohup firefox </dev/null >/dev/null 2>&1 & disown"]
         },
         {
             label: "Obsidian",
-            command: "obsidian"
+            command: ["sh", "-c", "nohup obsidian </dev/null >/dev/null 2>&1 & disown"]
         },
         {
             label: "Discord",
@@ -34,7 +34,7 @@ Scope {
         },
         {
             label: "Kitty",
-            command: "kitty"
+            command: ["sh", "-c", "nohup kitty </dev/null >/dev/null 2>&1 & disown"]
         },
         {
             label: "Reboot",
@@ -46,7 +46,7 @@ Scope {
         },
         {
             label: "Rnote",
-            command: "rnote"
+            command: ["sh", "-c", "nohup rnote </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
 

@@ -1,6 +1,7 @@
 import Quickshell
 import Quickshell.Io
 import Quickshell.Hyprland
+import Quickshell.Services.Notifications
 import QtQuick
 import QtQuick.Effects
 import QtQuick.Layouts
@@ -138,6 +139,30 @@ Scope {
             }
         }
     }
+
+    // PanelWindow {
+    //     id: notificationPanel
+
+    //     property var notifications: [ ]
+
+    //     Repeater {
+    //         model: notificationPanel.notifications.length
+
+    //         Text {
+    //             text: index + notificationPanel.notifications[index].body
+    //         }
+    //     }
+    // }
+
+    // NotificationServer {
+    //     onNotification: (notification) => {
+    //         notification.tracked = true
+
+    //         console.log(notification)
+
+    //         notifications.push(notification)
+    //     }
+    // }
  
     Process {
         id: clockProcess
