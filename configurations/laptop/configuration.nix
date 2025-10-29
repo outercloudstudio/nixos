@@ -46,6 +46,9 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  programs.hyprland.enable = true;
+  # programs.niri.enable = true;
+
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
@@ -134,10 +137,6 @@
       monospace = ["Fira Code"];
     };
   };
-
-  programs.hyprland.enable = true;
-
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # xdg.portal.enable = true;
   # xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
