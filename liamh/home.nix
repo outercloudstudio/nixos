@@ -16,9 +16,9 @@
     ./helix
     ./discord
     ./quickshell
-    # ./krita
     ./nix-direnv
-    ./zed
+    # ./krita
+    # ./zed
   ];
 
   home.packages = with pkgs; [
