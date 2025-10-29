@@ -18,6 +18,7 @@
     ./quickshell
     # ./krita
     ./nix-direnv
+    ./zed
   ];
 
   home.packages = with pkgs; [
