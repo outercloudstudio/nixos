@@ -5,6 +5,7 @@ import QtQuick
 import QtQuick.Effects
 import QtQuick.Layouts
 import QtQuick.Controls
+import "fuse.basic.js" as FuseModule
 
 Scope {
     id: root
@@ -30,7 +31,7 @@ Scope {
         },
         {
             label: "Claude",
-            command: ["chromium","--app=https://claude.ai","--force-dark-mode"],
+            command: ["sh", "-c", "nohup chromium --app=https://claude.ai --force-dark-mode </dev/null >/dev/null 2>&1 & disown"],
         },
         {
             label: "Kitty",
@@ -49,6 +50,8 @@ Scope {
             command: ["sh", "-c", "nohup rnote </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
+
+    readonly property var fuse: new FuseModule.Fuse(items, { keys: ['label'], includeScore: true })
 
     FloatingWindow {
         id: panel
@@ -104,15 +107,21 @@ Scope {
                 onTextChanged: searchText = text
 
                 Keys.onReturnPressed: {
-                    const filteredActions = items.filter(item => item.label.toLowerCase().includes(searchText.toLowerCase()))
-                    
-                    if(filteredActions[0]) {
+                    const search = fuse.search(searchText).filter(search => search.score <= 0.3)
+
+                    if(search[0]) {
+                        const action = search[0].item
+
                         let process = Qt.createQmlObject('import Quickshell.Io; Process { }', parent);
-                        process.command = typeof filteredActions[0].command === "string" ? [ filteredActions[0].command ] : filteredActions[0].command
+                        process.command = typeof action.command === "string" ? [ action.command ] : action.command
                         process.running = true
 
                         display = false
                     }
+                }
+
+                Keys.onEscapePressed: {
+                    display = false
                 }
 
                 color: "#ffffff"
@@ -141,7 +150,7 @@ Scope {
             ListView {
                 id: listView
                 
-                model: items.filter(item => item.label.toLowerCase().includes(searchText.toLowerCase()))
+                model: fuse.search(searchText).filter(search => search.score <= 0.3).length === 0 ? items : fuse.search(searchText).filter(search => search.score <= 0.3).map(item => item.item)
                 spacing: 8
 
                 Layout.fillWidth: true
