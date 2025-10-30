@@ -118,6 +118,7 @@
     hyprpolkitagent
     obsidian
     wl-clipboard
+    brightnessctl
   ];
 
   fonts.packages = with pkgs; [
