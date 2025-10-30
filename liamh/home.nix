@@ -18,6 +18,8 @@
     ./quickshell
     ./nix-direnv
     # ./krita
+    
+    ./vscode
     # ./zed
   ];
 

@@ -21,6 +21,7 @@
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
+						home-manager.backupFileExtension = "hm-backup";
 						home-manager.users.liamh = import ./liamh/home.nix;
 						home-manager.extraSpecialArgs = {
 							pkgs-unstable = import nixpkgs-unstable {
@@ -40,6 +41,7 @@
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
+						home-manager.backupFileExtension = "hm-backup";
 						home-manager.users.liamh = import ./liamh/home.nix;
 						home-manager.extraSpecialArgs = {
 							pkgs-unstable = import nixpkgs-unstable {
