@@ -28,6 +28,7 @@
     rnote
     brightnessctl
     fastfetch
+    hyprshot
   ];
 
   home.stateVersion = "25.05";
