@@ -1,8 +1,4 @@
 { pkgs-unstable, pkgs, ... } : {
-    # home.packages = with pkgs-unstable; [
-    #     vscode
-    # ];
-
     home.packages = with pkgs; [
         nil
     ];
@@ -19,6 +15,7 @@
             esbenp.prettier-vscode
             scala-lang.scala
             vue.volar
+            scalameta.metals
         ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
             {
                 name = "beardedtheme";
@@ -60,6 +57,11 @@
 
             "telemetry.feedback.enabled" = false;
             "telemetry.telemetryLevel" = "off";
+            
+            "files.watcherExclude" = {
+                "**/.bloop" = true;
+                "**/.metals" = true;
+            };
         };
     };
 }

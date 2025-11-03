@@ -17,7 +17,7 @@
     ./discord
     ./quickshell
     ./nix-direnv
-    # ./krita
+    ./krita
     
     ./vscode
     # ./zed
