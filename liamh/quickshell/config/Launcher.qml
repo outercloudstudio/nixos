@@ -48,6 +48,10 @@ Scope {
         {
             label: "Rnote",
             command: ["sh", "-c", "nohup rnote </dev/null >/dev/null 2>&1 & disown"]
+        },
+        {
+            label: "Krita",
+            command: ["sh", "-c", "nohup krita </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
 
