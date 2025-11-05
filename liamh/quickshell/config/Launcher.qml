@@ -56,6 +56,10 @@ Scope {
         {
             label: "Blender",
             command: ["sh", "-c", "nohup blender </dev/null >/dev/null 2>&1 & disown"]
+        },
+        {
+            label: "Bluetooth",
+            command: ["sh", "-c", "nohup blueman-manager </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
 
