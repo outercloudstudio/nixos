@@ -29,6 +29,8 @@
     brightnessctl
     fastfetch
     hyprshot
+    blender
+    unzip
   ];
 
   home.stateVersion = "25.05";

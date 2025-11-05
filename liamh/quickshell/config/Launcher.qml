@@ -52,6 +52,10 @@ Scope {
         {
             label: "Krita",
             command: ["sh", "-c", "nohup krita </dev/null >/dev/null 2>&1 & disown"]
+        },
+        {
+            label: "Blender",
+            command: ["sh", "-c", "nohup blender </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
 
