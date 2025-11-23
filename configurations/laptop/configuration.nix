@@ -105,7 +105,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     lf
-    mako
     libnotify
     hyprpaper
     fzf

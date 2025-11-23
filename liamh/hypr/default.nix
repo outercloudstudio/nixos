@@ -7,12 +7,12 @@
         enable = true;
         
 		plugins = [
-			# pkgs.hyprlandPlugins.hyprscrolling
+			pkgs.hyprlandPlugins.hyprscrolling
 		];
 
 		settings = {
-            source = "~/.config/hypr/user.conf";
-        };
+			source = "~/.config/hypr/user.conf";
+		};
 	};
 
  	home.sessionVariables.NIXOS_OZONE_WL = "1";

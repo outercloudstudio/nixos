@@ -39,7 +39,7 @@ Scope {
                     fill: parent
                 }
 
-                color: "#111111"
+                color: "#cc111111"
 
                 layer.enabled: true
                 layer.effect: MultiEffect {
