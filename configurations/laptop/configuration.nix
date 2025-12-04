@@ -124,6 +124,7 @@
     fira-code
     fira-code-symbols
     font-awesome
+    jetbrains-mono
   ];
 
   fonts.fontconfig = {
