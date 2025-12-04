@@ -24,10 +24,6 @@ Singleton {
         imageSupported: true
         persistenceSupported: true
 
-        Component.onCompleted: {
-            console.log("NotificationServer created and ready")
-        }
-
         onNotification: notification => {
             console.log(JSON.stringify(notification))
 

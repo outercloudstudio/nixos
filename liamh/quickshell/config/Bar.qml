@@ -5,6 +5,7 @@ import QtQuick
 import QtQuick.Effects
 import QtQuick.Layouts
 import QtQuick.Controls
+import Quickshell.Services.UPower
 
 Scope {
     id: root
@@ -89,66 +90,22 @@ Scope {
                     }
                 }
 
-                Item {
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: childrenRect.width
+                Repeater {
+                    model: Hyprland.workspaces.values.length
 
-                    Text {
-                        text: "1"
-                        color: "white"
+                    Item {
+                        Layout.fillHeight: true
+                        Layout.preferredWidth: childrenRect.width
 
-                        font {
-                            weight: 500
-                            pixelSize: 12
-                            family: "JetBrains Mono"
-                        }
-                    }
-                }
+                        Text {
+                            text: Hyprland.workspaces.values[index].id
+                            color: Hyprland.focusedWorkspace.id === Hyprland.workspaces.values[index].id ? "white" : "#2C2C2C"
 
-                Item {
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: childrenRect.width
-
-                    Text {
-                        text: "2"
-                        color: "#2C2C2C"
-
-                        font {
-                            weight: 500
-                            pixelSize: 12
-                            family: "JetBrains Mono"
-                        }
-                    }
-                }
-
-                Item {
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: childrenRect.width
-
-                    Text {
-                        text: "3"
-                        color: "#2C2C2C"
-
-                        font {
-                            weight: 500
-                            pixelSize: 12
-                            family: "JetBrains Mono"
-                        }
-                    }
-                }
-
-                Item {
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: childrenRect.width
-
-                    Text {
-                        text: "4"
-                        color: "#2C2C2C"
-
-                        font {
-                            weight: 500
-                            pixelSize: 12
-                            family: "JetBrains Mono"
+                            font {
+                                weight: 500
+                                pixelSize: 12
+                                family: "JetBrains Mono"
+                            }
                         }
                     }
                 }
@@ -174,7 +131,7 @@ Scope {
                     Layout.preferredWidth: childrenRect.width
 
                     Text {
-                        text: "20%"
+                        text: `${Math.round(UPower.devices.values.find(device => device.type === UPowerDeviceType.Battery).percentage * 100)}%`
                         color: "white"
 
                         font {
