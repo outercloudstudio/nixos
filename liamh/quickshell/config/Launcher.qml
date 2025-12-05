@@ -68,7 +68,18 @@ Scope {
     FloatingWindow {
         id: panel
 
-        color: "#111111"
+        color: "black"
+
+        Rectangle {
+            anchors.fill: parent
+
+            color: "transparent"
+
+            border {
+                color: "#2C2C2C"
+                width: 1
+            }
+        }
 
         visible: display
 
@@ -105,15 +116,15 @@ Scope {
 
         ColumnLayout {
             anchors.fill: parent
-            anchors.margins: 8
-            spacing: 8
+            anchors.margins: 24
+            spacing: 16
 
             TextField {
                 id: search
 
                 Layout.fillWidth: true
 
-                implicitHeight: 40
+                implicitHeight: 64
                 background: null
 
                 onTextChanged: searchText = text
@@ -138,24 +149,43 @@ Scope {
 
                 color: "#ffffff"
 
-                placeholderText: "Search..."
-                placeholderTextColor: "#ffffff"
+                placeholderText: "Let's Go..."
+                placeholderTextColor: "#2C2C2C"
 
                 font {
                     weight: 500
                     pixelSize: 16
+                    family: "JetBrains Mono"
                 }
 
-                padding: 8
+                padding: 24
+                leftPadding: 40
 
                 Rectangle {
                     anchors.fill: parent
 
                     color: "transparent"
-                    radius: 4
 
-                    border.color: "#1f1f1f"
-                    border.width: 2
+                    border.color: "#2C2C2C"
+                    border.width: 1
+                }
+
+                Text {
+                    anchors {
+                        left: parent.left
+                        leftMargin: 24
+                        verticalCenter: parent.verticalCenter
+                        verticalCenterOffset: -2
+                    }
+                    
+                    text: ">"
+                    color: "white"
+                    
+                    font {
+                        weight: 500
+                        pixelSize: 16
+                        family: "JetBrains Mono"
+                    }
                 }
             }
 
@@ -167,12 +197,13 @@ Scope {
 
                 Layout.fillWidth: true
                 Layout.fillHeight: true
+
+                clip: true
                 
                 delegate: Rectangle {
                     width: listView.width
                     height: 40
-                    color: "#171717"
-                    radius: 4
+                    color: "transparent"
                     
                     Text {
                         anchors {
@@ -187,6 +218,7 @@ Scope {
                         font {
                             weight: 500
                             pixelSize: 16
+                            family: "JetBrains Mono"
                         }
                     }
                     
