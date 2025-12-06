@@ -27,7 +27,7 @@ Scope {
         },
         {
             label: "Discord",
-            command: "discord"
+            command: ["sh", "-c", "nohup discord </dev/null >/dev/null 2>&1 & disown"]
         },
         {
             label: "Claude",
@@ -159,6 +159,8 @@ Scope {
                 }
 
                 padding: 24
+                topPadding: 26
+                bottomPadding: 22
                 leftPadding: 40
 
                 Rectangle {
@@ -175,7 +177,6 @@ Scope {
                         left: parent.left
                         leftMargin: 24
                         verticalCenter: parent.verticalCenter
-                        verticalCenterOffset: -2
                     }
                     
                     text: ">"

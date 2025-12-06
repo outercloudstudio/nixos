@@ -10,4 +10,6 @@ Scope {
     Bar {}
 
     Launcher {}
+
+    Welcome {}
 }
