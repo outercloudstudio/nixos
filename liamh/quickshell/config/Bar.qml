@@ -56,11 +56,15 @@ Scope {
 
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: childrenRect.width
+                    Layout.fillWidth: true
 
                     Text {
                         text: Notifications.values.length > 0 ? Notifications.values[Notifications.values.length - 1] : "Nothing Yet"
                         color: Notifications.values.length > 0 ? "white" : "#2C2C2C"
+
+                        width: parent.width
+                        
+                        elide: Text.ElideRight
 
                         font {
                             weight: 500
@@ -68,10 +72,6 @@ Scope {
                             family: "JetBrains Mono"
                         }
                     }
-                }
-
-                Item {
-                    Layout.fillWidth: true
                 }
 
                 Item {

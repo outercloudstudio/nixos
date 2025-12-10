@@ -45,7 +45,7 @@ Scope {
 
             Text {
                 id: subText
-
+                
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
 
