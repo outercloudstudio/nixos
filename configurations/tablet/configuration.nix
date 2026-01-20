@@ -184,6 +184,8 @@
     SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="ILIT2901:00 222A:5539", ENV{LIBINPUT_IGNORE_DEVICE}="1"
   '';
 
+  services.tailscale.enable = true;
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

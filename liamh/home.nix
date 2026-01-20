@@ -31,6 +31,8 @@
     hyprshot
     blender
     unzip
+    circumflex
+    superfile
   ];
 
   home.stateVersion = "25.05";
