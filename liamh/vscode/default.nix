@@ -62,6 +62,9 @@
                 "**/.bloop" = true;
                 "**/.metals" = true;
             };
+
+
+            "editor.detectIndentation" = false;
         };
     };
 }
