@@ -18,6 +18,8 @@
     ./quickshell
     ./nix-direnv
     ./krita
+    ./firefox
+    ./obsidian
     
     ./vscode
     # ./zed
@@ -26,13 +28,19 @@
   home.packages = with pkgs; [
     chromium
     rnote
-    brightnessctl
     fastfetch
     hyprshot
     blender
     unzip
-    circumflex
     superfile
+    brightnessctl
+    lf
+    libnotify
+    fzf
+    btop
+    cava
+    pavucontrol
+    wl-clipboard
   ];
 
   home.stateVersion = "25.05";

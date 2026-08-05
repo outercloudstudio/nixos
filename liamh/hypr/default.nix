@@ -7,7 +7,7 @@
         enable = true;
         
 		plugins = [
-			pkgs.hyprlandPlugins.hyprscrolling
+			# pkgs.hyprlandPlugins.hyprscrolling
 		];
 
 		settings = {

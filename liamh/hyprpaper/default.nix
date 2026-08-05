@@ -5,9 +5,9 @@
         enable = true;
         
         settings = {
-            preload = [ "~/backgrounds/black.jpg" ];
+            preload = [ "~/backgrounds/outer-wilds-2.jpg" ];
         
-            wallpaper = [ "eDP-2,~/backgrounds/black.jpg" "eDP-1,~/backgrounds/black.jpg" ];
+            wallpaper = [ "eDP-2,~/backgrounds/outer-wilds-2.jpg" "eDP-1,~/backgrounds/outer-wilds-2.jpg" ];
         };
     };
 
