@@ -5,10 +5,14 @@
   home.homeDirectory = "/home/liamh";
 
   imports = [
-    ./hypr
-    ./hyprcursor
-    ./hyprpaper
-    ./kitty
+    ./niri
+    # ./hypr
+    # ./hyprcursor
+    # ./hyprpaper
+
+    ./alacritty
+    # ./kitty
+
     ./fzf-launcher
     ./scripts
     ./git

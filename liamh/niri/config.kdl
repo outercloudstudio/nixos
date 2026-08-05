@@ -1,0 +1,42 @@
+spawn-at-startup "nix" "run" "--impure" "github:guibou/nixGL" "--" "quickshell"
+spawn-at-startup "swaybg" "-i" "/home/liamh/backgrounds/outer-wilds-2.png" "-m" "fill"
+
+prefer-no-csd
+
+output "eDP-1" {
+    scale 1
+}
+
+layout {
+    gaps 0
+
+    background-color "transparent"
+
+    empty-workspace-above-first
+
+    focus-ring {
+        off
+    }
+
+    insert-hint {
+        off
+    }
+}
+
+input {
+    focus-follows-mouse
+
+    touchpad {
+        accel-speed 0.25
+    }
+}
+
+binds {
+    Mod+Q { spawn "alacritty"; }
+    Mod+C { close-window; }
+}
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}

@@ -33,8 +33,8 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  programs.hyprland.enable = true;
-  # programs.niri.enable = true;
+  # programs.hyprland.enable = true;
+  programs.niri.enable = true;
 
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
@@ -119,6 +119,8 @@
   services.udev.extraRules = ''
     SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="ILIT2901:00 222A:5539", ENV{LIBINPUT_IGNORE_DEVICE}="1"
   '';
+
+  hardware.graphics.enable = true;
 
   system.stateVersion = "25.05";
 }
