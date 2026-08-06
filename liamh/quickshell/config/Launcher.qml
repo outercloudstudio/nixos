@@ -27,7 +27,7 @@ Scope {
         },
         {
             label: "Discord",
-            command: ["sh", "-c", "nohup discord </dev/null >/dev/null 2>&1 & disown"]
+            command: ["sh", "-c", "nohup vesktop </dev/null >/dev/null 2>&1 & disown"]
         },
         {
             label: "Claude",
