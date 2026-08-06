@@ -28,6 +28,7 @@ input {
 
     touchpad {
         accel-speed 0.225
+        scroll-factor 1
 
         tap
         click-method "clickfinger"
@@ -37,6 +38,9 @@ input {
 binds {
     Mod+Q { spawn "alacritty"; }
     Mod+C { close-window; }
+    Mod+S { spawn "qs" "ipc" "call" "launcher" "toggle"; }
+    Mod+F { maximize-column; }
+    Mod+A { switch-preset-column-width; }
 }
 
 layer-rule {
@@ -44,7 +48,51 @@ layer-rule {
     place-within-backdrop true
 }
 
+window-rule {
+    match title="^QML Launcher$"
+    open-floating true
+    open-focused true
+    default-column-width { fixed 600; }
+    default-window-height { fixed 400; }
+}
+
 cursor {
     xcursor-theme "rose-pine"
     xcursor-size 24
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+animations {
+    window-open {
+        duration-ms 300
+        curve "cubic-bezier" 0.2 1.05 0.3 1.05
+    }
+
+    window-close {
+        duration-ms 300
+        curve "cubic-bezier" 0.3 -0.3 0 1
+    }
+
+    window-movement {
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.9 0.1 1.05
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=0.88 stiffness=1200 epsilon=0.0001
+    }
+
+    workspace-switch {
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.9 0.1 1.05
+    }
 }

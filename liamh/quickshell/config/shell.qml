@@ -9,7 +9,7 @@ import QtQuick.Layouts
 Scope {
     Bar {}
 
-    // Launcher {}
+    Launcher {}
 
-    // Welcome {}
+    Welcome {}
 }
