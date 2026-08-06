@@ -28,6 +28,9 @@ input {
 
     touchpad {
         accel-speed 0.225
+
+        tap
+        click-method "clickfinger"
     }
 }
 
