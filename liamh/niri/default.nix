@@ -16,5 +16,10 @@
 		recursive = true;
 	};
 
+  home.file.".local/share/icons/" = {
+		source = ../cursors;
+		recursive = true;
+	};
+
  	home.sessionVariables.NIXOS_OZONE_WL = "1";
 }

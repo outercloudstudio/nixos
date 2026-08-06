@@ -27,7 +27,7 @@ input {
     focus-follows-mouse
 
     touchpad {
-        accel-speed 0.25
+        accel-speed 0.225
     }
 }
 
@@ -39,4 +39,9 @@ binds {
 layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
+}
+
+cursor {
+    xcursor-theme "rose-pine"
+    xcursor-size 18
 }
