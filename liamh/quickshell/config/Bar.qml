@@ -1,6 +1,6 @@
 import Quickshell
 import Quickshell.Io
-// import Quickshell.Hyprland
+import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Effects
 import QtQuick.Layouts
@@ -90,41 +90,41 @@ Scope {
                     }
                 }
 
-                // Repeater {
-                //     model: Hyprland.workspaces.values.length
+                Repeater {
+                    model: Hyprland.workspaces.values.length
 
-                //     Item {
-                //         Layout.fillHeight: true
-                //         Layout.preferredWidth: childrenRect.width
+                    Item {
+                        Layout.fillHeight: true
+                        Layout.preferredWidth: childrenRect.width
 
-                //         Text {
-                //             text: Hyprland.workspaces.values[index].id
-                //             color: Hyprland.focusedWorkspace.id === Hyprland.workspaces.values[index].id ? "white" : "#2C2C2C"
+                        Text {
+                            text: Hyprland.workspaces.values[index].id
+                            color: Hyprland.focusedWorkspace.id === Hyprland.workspaces.values[index].id ? "white" : "#2C2C2C"
 
-                //             font {
-                //                 weight: 500
-                //                 pixelSize: 12
-                //                 family: "JetBrains Mono"
-                //             }
-                //         }
-                //     }
-                // }
+                            font {
+                                weight: 500
+                                pixelSize: 12
+                                family: "JetBrains Mono"
+                            }
+                        }
+                    }
+                }
 
-                // Item {
-                //     Layout.fillHeight: true
-                //     Layout.preferredWidth: childrenRect.width
+                Item {
+                    Layout.fillHeight: true
+                    Layout.preferredWidth: childrenRect.width
 
-                //     Text {
-                //         text: "|"
-                //         color: "#2C2C2C"
+                    Text {
+                        text: "|"
+                        color: "#2C2C2C"
 
-                //         font {
-                //             weight: 500
-                //             pixelSize: 12
-                //             family: "JetBrains Mono"
-                //         }
-                //     }
-                // }
+                        font {
+                            weight: 500
+                            pixelSize: 12
+                            family: "JetBrains Mono"
+                        }
+                    }
+                }
 
                 Item {
                     Layout.fillHeight: true

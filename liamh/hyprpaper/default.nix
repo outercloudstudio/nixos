@@ -1,18 +1,12 @@
 { config, pkgs, ... }:
 
 {
-    services.hyprpaper = {
-        enable = true;
-        
-        settings = {
-            preload = [ "~/backgrounds/outer-wilds-2.jpg" ];
-        
-            wallpaper = [ "eDP-2,~/backgrounds/outer-wilds-2.jpg" "eDP-1,~/backgrounds/outer-wilds-2.jpg" ];
-        };
-    };
+    home.packages = [ pkgs.hyprpaper ];
+
+    home.file.".config/hypr/hyprpaper.conf".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/liamh/hyprpaper/hyprpaper.conf";
 
     home.file."backgrounds" = {
-		source = ./backgrounds;
-		recursive = true;
-	};
+      source = ../backgrounds;
+      recursive = true;
+    };
 }

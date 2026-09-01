@@ -1,6 +1,6 @@
 import Quickshell
 import Quickshell.Io
-// import Quickshell.Hyprland
+import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Effects
 import QtQuick.Layouts
@@ -94,25 +94,25 @@ Scope {
             }
         }
 
-        // Timer {
-        //     id: check
+        Timer {
+            id: check
 
-        //     interval: 100
-        //     running: false
-        //     repeat: true
-        //     onTriggered: {
-        //         for(const workspace of Hyprland.workspaces.values) {
-        //             for(const toplevel of workspace.toplevels.values) {
-        //                 if(toplevel.title !== 'org.quickshell') continue
+            interval: 100
+            running: false
+            repeat: true
+            onTriggered: {
+                for(const workspace of Hyprland.workspaces.values) {
+                    for(const toplevel of workspace.toplevels.values) {
+                        if(toplevel.title !== 'org.quickshell') continue
 
-        //                 if(toplevel.activated) continue
+                        if(toplevel.activated) continue
 
-        //                 display = false
-        //                 running = false
-        //             }
-        //         }
-        //     }
-        // }
+                        display = false
+                        running = false
+                    }
+                }
+            }
+        }
 
         ColumnLayout {
             anchors.fill: parent
@@ -239,24 +239,11 @@ Scope {
         }
     }
 
-    // GlobalShortcut {
-    //     name: "launch"
-    //     description: qsTr("Opens App Launcher")
+    GlobalShortcut {
+        name: "launch"
+        description: qsTr("Opens App Launcher")
 
-    //     onPressed: {        
-            // display = !display
-
-            // if(display) {
-            //     search.forceActiveFocus()
-            //     search.text = ""
-            // }
-    //     }
-    // }
-
-    IpcHandler {
-        target: "launcher"
-
-        function toggle() {
+        onPressed: {        
             display = !display
 
             if(display) {

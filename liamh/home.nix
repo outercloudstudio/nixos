@@ -5,10 +5,10 @@
   home.homeDirectory = "/home/liamh";
 
   imports = [
-    ./niri
-    # ./hypr
-    # ./hyprcursor
-    # ./hyprpaper
+    # ./niri
+    ./hypr
+    ./hyprcursor
+    ./hyprpaper
 
     ./alacritty
     # ./kitty
