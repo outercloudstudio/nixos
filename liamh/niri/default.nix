@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     swaybg
+    xwayland-satellite
   ];
 
   home.file."backgrounds" = {

@@ -36,6 +36,8 @@
   # programs.hyprland.enable = true;
   programs.niri.enable = true;
 
+  programs.nix-ld.enable = true;
+
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
@@ -57,7 +59,7 @@
   users.users.liamh = {
     isNormalUser = true;
     description = "Liam Hanrahan";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     packages = with pkgs; [];
   };
 
@@ -116,9 +118,9 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # networking.firewall.enable = false;
 
-  services.udev.extraRules = ''
-    SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="ILIT2901:00 222A:5539", ENV{LIBINPUT_IGNORE_DEVICE}="1"
-  '';
+#   services.udev.extraRules = ''
+#     SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="ILIT2901:00 222A:5539", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+#   '';
 
   hardware.graphics.enable = true;
 

@@ -1,5 +1,6 @@
 spawn-at-startup "nix" "run" "--impure" "github:guibou/nixGL" "--" "quickshell"
 spawn-at-startup "swaybg" "-i" "/home/liamh/backgrounds/outer-wilds-2.png" "-m" "fill"
+spawn-at-startup "xwayland-satellite"
 
 prefer-no-csd
 
@@ -39,8 +40,9 @@ binds {
     Mod+Q { spawn "alacritty"; }
     Mod+C { close-window; }
     Mod+S { spawn "qs" "ipc" "call" "launcher" "toggle"; }
-    Mod+F { maximize-column; }
     Mod+A { switch-preset-column-width; }
+    Mod+D { maximize-column; }
+    Mod+F { spawn "hyprshot" "-m" "region" "--clipboard-only"; }
 }
 
 layer-rule {
@@ -54,6 +56,21 @@ window-rule {
     open-focused true
     default-column-width { fixed 600; }
     default-window-height { fixed 400; }
+}
+
+window-rule {
+    match app-id="code"
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="com.github.flxzt.rnote"
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="vesktop"
+    default-column-width { proportion 1.0; }
 }
 
 cursor {

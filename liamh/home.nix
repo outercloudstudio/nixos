@@ -24,7 +24,8 @@
     ./krita
     ./firefox
     ./obsidian
-    
+    ./nnn
+
     ./vscode
     # ./zed
   ];
@@ -45,6 +46,8 @@
     cava
     pavucontrol
     wl-clipboard
+    audacity
+    lazygit
   ];
 
   home.stateVersion = "25.05";
