@@ -34,7 +34,7 @@ Scope {
 
                 text: "Welcome Back Liam"
 
-                color: "white"
+                color: "#2C2C2C"
 
                 font {
                     weight: 500
@@ -51,7 +51,7 @@ Scope {
 
                 text: "What shall we do today?"
 
-                color: "white"
+                color: "#2C2C2C"
 
                 font {
                     weight: 500

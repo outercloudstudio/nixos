@@ -31,7 +31,7 @@ Scope {
         },
         {
             label: "Claude",
-            command: ["sh", "-c", "nohup chromium --app=https://claude.ai --force-dark-mode </dev/null >/dev/null 2>&1 & disown"],
+            command: ["sh", "-c", "nohup chromium --app=https://claude.ai </dev/null >/dev/null 2>&1 & disown"],
         },
         {
             label: "Kitty",
@@ -60,6 +60,10 @@ Scope {
         {
             label: "Bluetooth",
             command: ["sh", "-c", "nohup blueman-manager </dev/null >/dev/null 2>&1 & disown"]
+        },
+        {
+            label: "SpeedCrunch",
+            command: ["sh", "-c", "nohup speedcrunch </dev/null >/dev/null 2>&1 & disown"]
         }
     ]
 
@@ -68,7 +72,7 @@ Scope {
     FloatingWindow {
         id: panel
 
-        color: "black"
+        color: "#FFFFFF"
 
         Rectangle {
             anchors.fill: parent
@@ -147,7 +151,7 @@ Scope {
                     display = false
                 }
 
-                color: "#ffffff"
+                color: "#2c2c2c"
 
                 placeholderText: "Let's Go..."
                 placeholderTextColor: "#2C2C2C"
@@ -180,7 +184,7 @@ Scope {
                     }
                     
                     text: ">"
-                    color: "white"
+                    color: "#2c2c2c"
                     
                     font {
                         weight: 500
@@ -214,7 +218,7 @@ Scope {
                         }
 
                         text: modelData.label
-                        color: "#ffffff"
+                        color: "#2c2c2c"
 
                         font {
                             weight: 500

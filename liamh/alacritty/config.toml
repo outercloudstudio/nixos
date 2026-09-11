@@ -3,27 +3,27 @@ normal = { family = "JetBrains Mono", style = "Regular" }
 size = 11.0
 
 [colors.primary]
-background = '#000000'
-foreground = '#FFFFFF'
+background = '#FFFFFF'
+foreground = '#000000'
 
 [colors.normal]
-black   = '#1a1a1a'
-red     = '#f4005f'
-green   = '#98e024'
-yellow  = '#fa8419'
-blue    = '#9d65ff'
-magenta = '#f4005f'
-cyan    = '#58d1eb'
-white   = '#c4c5b5'
+black   = '#5c5e5a'
+red     = '#d3007a'
+green   = '#5a9216'
+yellow  = '#c26400'
+blue    = '#7c4dff'
+magenta = '#d3007a'
+cyan    = '#0090a8'
+white   = '#e6e6e0'
 
 [colors.bright]
-black   = '#625e4c'
+black   = '#8a8a7a'
 red     = '#f4005f'
-green   = '#98e024'
-yellow  = '#e0d561'
+green   = '#7cad1a'
+yellow  = '#e0a52f'
 blue    = '#9d65ff'
 magenta = '#f4005f'
-cyan    = '#58d1eb'
+cyan    = '#1fa8c9'
 white   = '#f6f6ef'
 
 [window]

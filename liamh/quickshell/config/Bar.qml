@@ -27,7 +27,8 @@ Scope {
 
             implicitHeight: 25
 
-            color: "transparent"
+            // color: "transparent"b
+            color: "#80FFFFFF"
 
             aboveWindows: false
             
@@ -60,7 +61,7 @@ Scope {
 
                     Text {
                         text: Notifications.values.length > 0 ? Notifications.values[Notifications.values.length - 1] : "Nothing Yet"
-                        color: Notifications.values.length > 0 ? "white" : "#2C2C2C"
+                        color: Notifications.values.length > 0 ? "#2C2C2C" : "#999999"
 
                         width: parent.width
                         
@@ -99,7 +100,7 @@ Scope {
 
                         Text {
                             text: Hyprland.workspaces.values[index].id
-                            color: Hyprland.focusedWorkspace.id === Hyprland.workspaces.values[index].id ? "white" : "#2C2C2C"
+                            color: Hyprland.focusedWorkspace.id === Hyprland.workspaces.values[index].id ? "#2C2C2C" : "#999999"
 
                             font {
                                 weight: 500
@@ -132,7 +133,7 @@ Scope {
 
                     Text {
                         text: `${Math.round(UPower.devices.values.find(device => device.type === UPowerDeviceType.Battery).percentage * 100)}%`
-                        color: "white"
+                        color: "#2C2C2C"
 
                         font {
                             weight: 500
@@ -164,7 +165,7 @@ Scope {
 
                     Text {
                         text: root.time
-                        color: "white"
+                        color: "#2C2C2C"
 
                         font {
                             weight: 500

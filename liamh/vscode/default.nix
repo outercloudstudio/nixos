@@ -18,6 +18,12 @@
             scalameta.metals
         ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
             {
+                name = "cod-autumn-theme";
+                publisher = "codigrate";
+                version = "2026.1.20";
+                sha256 = "sha256-1QzUqKxC8PA+wGAnXSG1i11tB0VofsdhXG/VUvzABds=";
+            }
+            {
                 name = "beardedtheme";
                 publisher = "beardedbear";
                 version = "10.1.0";
@@ -43,7 +49,7 @@
             "editor.bracketPairColorization.enabled" = false;
 
             "workbench.iconTheme" = "material-icon-theme";
-            "workbench.colorTheme" = "Bearded Theme Monokai Black";
+            "workbench.colorTheme" = "Codigrate Autumn";
 
             "chat.agent.enabled" = false;
             "chat.commandCenter.enabled" = false;

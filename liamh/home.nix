@@ -48,6 +48,7 @@
     wl-clipboard
     audacity
     lazygit
+    speedcrunch
   ];
 
   home.stateVersion = "25.05";
