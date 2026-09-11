@@ -38,6 +38,8 @@
 
   programs.nix-ld.enable = true;
 
+  virtualisation.podman.enable = true;
+
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
@@ -59,7 +61,7 @@
   users.users.liamh = {
     isNormalUser = true;
     description = "Liam Hanrahan";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "podman" ];
     packages = with pkgs; [];
   };
 
