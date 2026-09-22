@@ -1,6 +1,7 @@
 { pkgs-unstable, pkgs, ... } : {
     home.packages = with pkgs; [
         nil
+        nixd
     ];
 
     programs.vscode = {
@@ -34,6 +35,12 @@
                 publisher = "bbenoist";
                 version = "1.0.0";
                 sha256 = "sha256-tphnVlD5LA6Au+WDrLZkAxnMJeTCd3UTyTN1Jelditk=";
+            }
+            {
+               name = "vscode-pdf";
+               publisher = "mathematic";
+               version = "0.1.11";
+               sha256 = "sha256-cdDEsaYSm3XmXb3LuNGxwdzczyyYe3tft+3epyO7wuU=";
             }
         ];
 

@@ -12,6 +12,9 @@
 
         alias rebuild="sudo nixos-rebuild switch --flake . --impure"
         alias cleanup="sudo nix-collect-garbage -d && rebuild"
+
+        alias unlock="ssh-add ~/.ssh/id_ed25519"
+
         eval "$(direnv hook bash)"
         '';
     };
