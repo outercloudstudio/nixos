@@ -6,9 +6,12 @@
 
   imports = [
     # ./niri
+    # ./quickshell-niri
+    
     ./hypr
     ./hyprcursor
     ./hyprpaper
+    ./quickshell
 
     ./alacritty
     # ./kitty
@@ -19,7 +22,6 @@
     ./bash
     ./helix
     ./discord
-    ./quickshell
     ./nix-direnv
     ./krita
     ./firefox
@@ -49,6 +51,7 @@
     audacity
     lazygit
     speedcrunch
+    tio
   ];
 
   home.stateVersion = "25.05";

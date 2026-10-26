@@ -1,5 +1,5 @@
 spawn-at-startup "nix" "run" "--impure" "github:guibou/nixGL" "--" "quickshell"
-spawn-at-startup "swaybg" "-i" "/home/liamh/backgrounds/outer-wilds-2.png" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/home/liamh/backgrounds/fall.jpg" "-m" "fill"
 spawn-at-startup "xwayland-satellite"
 
 prefer-no-csd

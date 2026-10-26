@@ -34,10 +34,11 @@
   };
 
   programs.hyprland.enable = true;
-  # programs.niri.enable = true;
+  programs.ssh.startAgent = true;
+
+#   programs.niri.enable = true;
 
   programs.nix-ld.enable = true;
-  programs.ssh.startAgent = true;
 
   virtualisation.podman.enable = true;
 
@@ -55,6 +56,8 @@
     pulse.enable = true;
     wireplumber.enable = true; 
  };
+
+ services.flatpak.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
